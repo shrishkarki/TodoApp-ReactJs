@@ -1,0 +1,12 @@
+.Todos-list{
+    width: 50%;
+    border: 1px solid #333;
+    display: flex;
+   justify-content: space-between;
+   margin: 5px auto;
+}
+.Todos-list-edit{
+    display: flex;
+    width :20%;
+    justify-content: space-between;
+}
