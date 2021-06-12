@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
-import './TodosInput.css';
+
+import MergeInput from './MergeInput';
+
 
 const TodosInput=(props)=>{
     const [enterTitle,setEnterTitle]=useState('');
+  
+
+    // console.log(enterTitle);
     
 
    const changeTodosInput=(event)=>{
         
         setEnterTitle(event.target.value);
+        // props.onSaveTodosInput(enterTitle);
+        // console.log(enterTitle);
 
     }
     const onSubmitHandler=(e)=>{
@@ -23,14 +30,22 @@ const TodosInput=(props)=>{
     }
 
     return(
-        <form className="todos-input" onSubmit={onSubmitHandler} >
-            <input 
-            type="text"
-            value={enterTitle}
-             onChange={changeTodosInput}/>
-            <button type="submit">Add New Task</button>
+         
+        <MergeInput
+            submit={onSubmitHandler}
+            title={enterTitle}
+            change={changeTodosInput}
+        />
+
+        // <form className="todos-input" onSubmit={onSubmitHandler} >
+        //     <input 
+        //     type="text"
+        //     value={enterTitle}
+        //      onChange={changeTodosInput}/>
+        //     <button type="submit">Add New Task</button>
             
-        </form>
+        // </form>
+    
     );
 
 }

@@ -1,0 +1,69 @@
+.AppHeader{
+  text-align: center;
+}
+body{
+  background-color:#1b222e;
+}
+
+.AppContainer{
+  width: 100%;
+
+ text-align: center;
+ color: white;
+ font-size: 20px;
+
+}
+.btnGroup{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 3px auto;
+
+}
+.AppShowCase{
+  min-height:200px;
+  width: 50%;
+ background-color: #272f3f;
+  margin: auto;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.active{
+  background-color: aquamarine;
+}
+
+
+
+/* media query */
+@media (max-width:700px) {
+
+  .AppShowCase{
+    width:70%;
+  }
+
+  .btnGroup{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3px auto;
+  
+  }
+}
+
+
+@media (max-width:500px) {
+  .AppShowCase{
+    width:90%;
+  }
+
+  .btnGroup{
+    width: 100%;
+    display: flex;
+    flex-direction:column-reverse;
+    /* flex: 1; */
+    margin:none;
+  
+  }
+  
+}

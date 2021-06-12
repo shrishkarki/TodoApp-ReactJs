@@ -6,8 +6,9 @@ const NewTodos1=(props)=>{
         const todosData={
             id:Math.random().toString(),...data,isChecked:false
         }
-        console.log(todosData);
+        // console.log(todosData);
         props.itemsBack(todosData);
+       
     }
 return(
     <div className="todos-set-input">

@@ -1,0 +1,53 @@
+.button {
+    font: inherit;
+  
+    color: white;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 3px;
+
+  }
+
+  .button[type="toggle"],.button[type="submit"]{
+    border: 1px solid hsl(310, 68%, 48%);
+    background: rgb(235, 17, 101);
+  }
+ .button[type="remove"]{
+      background-color: red;
+      border: brown;
+  }
+  .button[type="submit"]{
+    border: 1px solid #d4752d;
+    background: #eb8334;
+  }
+  .button[type="submit"]:hover{
+    border: 1px solid hsl(123, 98%, 42%);
+    background:#ff9544;
+  }
+  .button[type="remove"]:hover{
+      background-color:rgb(224, 64, 64);
+      border: rgb(182, 56, 56);
+  }
+  
+  .button[type="toggle"]:hover,
+  .button[type="toggle"]:active {
+    background-color: #fc033d;
+    background-color: rgba(255, 0, 98, 0.973);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+
+  @media (max-width:400px) {
+    
+    .button {
+     
+      padding: 0.2rem 0.8rem;
+     
+      margin: 3px;
+     
+  
+    }
+  }

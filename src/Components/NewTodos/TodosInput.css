@@ -1,8 +1,0 @@
-.todos-input{
-    width: 50%;
-    margin: 5px auto;
-}
-.todos-input input, .todos-input button{
-    display: block;
-    width: 100%;
-}
